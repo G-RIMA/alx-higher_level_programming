@@ -35,10 +35,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
     def height(self):
         """Get/set the height of the Rectangle."""
         return self.__height
-    
+
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -55,6 +56,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height*2))
+
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area.
         Args:
