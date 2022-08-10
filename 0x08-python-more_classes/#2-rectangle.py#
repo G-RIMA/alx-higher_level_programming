@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+# 2-rectangle.py
+"""Area and Perimeter"""
+
+
+class Rectangle:
+    """Represents the rectangle"""
+
+    def __init__(self, width=0, height=0):
+        """Initialise a new rectangle
+	
+	Inputs:
+		width (int): width of new rectangle.
+		height (int): height of a new rectangle
+           """
+        self.width = width
+        self.height = height
+
+    """ property """
+    def width(self):
+        """
