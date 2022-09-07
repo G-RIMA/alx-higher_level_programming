@@ -3,6 +3,6 @@
 const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 lines.forEach(myLines);
 
-function myLines(value) {
+function myLines (value) {
   console.log(value);
 }
