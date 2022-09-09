@@ -1,0 +1,11 @@
+-- Creates a database hbtn_0d_usa and a table called cities
+-- the table states  has a unique,auto generated and cant be null id and a name and a state id
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+USE hbtn_0d_usa;
+CREATE TABLE IF NOT EXISTS states (
+     id  INT UNIQUE AUTO_INCREMENT NOT NULL,
+     state_id INT NOT NULL,
+     NAME VARCHAR(256) NOT NULL,
+     PRIMARY KEY(id),
+     FOREIGN KEY(state_id) REFERENCES states(id)
+);
