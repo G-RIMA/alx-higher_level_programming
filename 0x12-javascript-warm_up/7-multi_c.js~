@@ -1,0 +1,14 @@
+#!/usr/bin/node
+// prints x times 'C is fun'
+
+function myLine (arg) {
+  arg = process.argv[2];
+  if (arg === 0) {
+    console.log('Missing number of occurences');
+  } else {
+    while (arg > 0) {
+	return arg;
+    }
+  }
+    console.log('C is fun' * myLine())
+}
