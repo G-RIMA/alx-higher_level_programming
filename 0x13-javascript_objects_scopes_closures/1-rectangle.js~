@@ -1,0 +1,9 @@
+#!/usr/bin/node
+// a class that defines a rectangle
+
+module.exprots = class Rectangle {
+  constructor(w, h) {
+    this.width = h;
+    this.height = h;
+    }
+};
